@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>المركب الطبي سيدي سليمان</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="rtl">
+
+<!-- ===== NAVBAR ===== -->
+<header>
+  <nav class="navbar">
+    <img src="img/logo.jpeg" class="logo" alt="الشعار">
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#">الرئيسية</a></li>
+      <li><a href="#">المنتجات</a></li>
+      <li><a href="#">الخدمات</a></li>
+      <li><a href="#">اتصل بنا</a></li>
+    </ul>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+</header>
+
+
+<!-- ===== HERO SLIDER ===== -->
+<section class="hero-slider">
+
+  <div class="hero-slide active">
+    <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511" alt="">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <div class="text-box fade-up">
+        <h1>صحتكم هي أولويتنا</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-slide">
+    <img src="img/slider1.jpg" alt="">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <div class="text-box fade-up">
+        <h1>تخصصات طبية وجراحية متكاملة</h1>
+      </div>
+    </div>
+  </div>
+
+  <button class="prev">&#10095;</button>
+  <button class="next">&#10094;</button>
+
+</section>
+
+
+<!-- ===== ABOUT ===== -->
+<section class="about-section fade-on-scroll">
+
+  <div class="about-container">
+
+    <div class="about-text fade-on-scroll">
+      <h2>حول المركب الطبي</h2>
+      <p>
+        يقع المركب الطبي في وسط مدينة سيدي سليمان،
+        مقابل المصحة الدولية الجديدة.
+        يضم جميع التخصصات الطبية والجراحية،
+        بالإضافة إلى مركز لإعادة التأهيل الوظيفي، ونظارات طبية وصيدلية.
+      </p>
+    </div>
+
+    <div class="about-video fade-on-scroll">
+      <div class="video-wrapper" id="videoBox">
+        <img src="img/video-thumb.jpg" alt="فيديو">
+        <div class="play-btn">▶</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ===== SPECIALTIES ===== -->
+<section class="specialties-section">
+
+  <h2 class="section-title fade-on-scroll">تخصصاتنا</h2>
+
+  <div class="specialties-grid">
+
+    <div class="specialty-card fade-on-scroll">
+      <img src="img/logo2.jpg" alt="">
+      <h3>أمراض الجهاز الهضمي</h3>
+      <p>طبيب مختص في أمراض الجهاز الهضمي</p>
+      <button class="card-btn open-modal"
+        data-title="أمراض الجهاز الهضمي"
+        data-text="تشخيص وعلاج أمراض الجهاز الهضمي.">
+        المزيد
+      </button>
+    </div>
+
+    <div class="specialty-card fade-on-scroll">
+      <img src="img/logo3.jpg" alt="">
+      <h3>أمراض النساء</h3>
+      <p>طبيب مختص في طب النساء</p>
+      <button class="card-btn open-modal"
+        data-title="أمراض النساء"
+        data-text="متابعة الحمل والعناية بصحة المرأة.">
+        المزيد
+      </button>
+    </div>
+
+    <div class="specialty-card fade-on-scroll">
+      <img src="img/logo4.jpg" alt="">
+      <h3>طب الحوادث</h3>
+      <p>طبيب مختص في الكسور والإصابات</p>
+      <button class="card-btn open-modal"
+        data-title="طب الحوادث"
+        data-text="علاج الكسور وإصابات الرياضة.">
+        المزيد
+      </button>
+    </div>
+
+    <div class="specialty-card fade-on-scroll">
+      <img src="img/logo5.jpg" alt="">
+      <h3>طب العيون</h3>
+      <p>طبيب مختص في أمراض العيون</p>
+      <button class="card-btn open-modal"
+        data-title="طب العيون"
+        data-text="فحوصات البصر وعلاج أمراض العين.">
+        المزيد
+      </button>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ===== MODAL ===== -->
+<div class="modal" id="modal">
+  <div class="modal-box">
+    <span class="close-modal">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <p id="modalText"></p>
+  </div>
+</div>
+
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+
+  <div class="footer-content">
+
+    <div class="footer-col fade-on-scroll">
+      <img src="../images/logo.png" class="footer-logo" alt="الشعار">
+      <h3>المركب الطبي<br>سيدي سليمان</h3>
+
+      <ul class="footer-info">
+        <li><i class="fas fa-phone"></i> 06 63 31 13 16</li>
+        <li><i class="fas fa-envelope"></i> contact@complexemedical.ma</li>
+        <li><i class="fas fa-map-marker-alt"></i>
+          حي أكدال، القطاع 4، رقم 156 – سيدي سليمان
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer-col fade-on-scroll">
+      <h4>موقعنا</h4>
+      <iframe
+        src="https://maps.google.com/maps?q=Sidi%20Slimane%20Morocco&t=&z=15&ie=UTF8&iwloc=&output=embed"
+        loading="lazy"></iframe>
+    </div>
+
+    <div class="footer-col footer-right fade-on-scroll">
+      <h4>النشرة البريدية</h4>
+      <form class="newsletter">
+        <input type="email" placeholder="بريدك الإلكتروني" required>
+        <button>اشترك</button>
+      </form>
+
+      <div class="footer-lang">
+        <a href="index-ar.html">🇲🇦 العربية</a>
+        <a href="index.html">🇫🇷 Français</a>
+      </div>
+
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom fade-on-scroll">
+    <p>© 2026 المركب الطبي سيدي سليمان</p>
+    <p>تصميم <span>Digisense</span></p>
+  </div>
+
+</footer>
+
+
+<button id="topBtn" class="top-btn">↑</button>
+
+<a href="https://wa.me/212663311316" class="whatsapp-float" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
